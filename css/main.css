@@ -150,7 +150,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 49%;
+  width: 100%;
   background: rgba(255, 255, 255, 0.85);
   padding: 20px;
   border-radius: 8px;
@@ -159,7 +159,7 @@ li {
 
 .menu-row li img {
   width: 100%;
-  height: 75px;
+  height: 240px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -203,4 +203,20 @@ footer p {
 footer nav ul li img {
   height: 40px;
   width: auto;
+}
+
+.center + ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.center + ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-end;
 }
